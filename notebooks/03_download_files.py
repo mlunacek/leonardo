@@ -17,7 +17,7 @@ import igc_validation
 
 def download_flight(flight_number):
     
-    filename = "flights/flight_{}.igc".format(flight_number)
+    filename = "../docs/flights/flight_{}.igc".format(flight_number)
     print(filename)
     
     headers = {'User-Agent': 'Mozilla/5.0'}
