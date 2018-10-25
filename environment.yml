@@ -1,0 +1,5 @@
+name: leonardo
+dependencies:
+- python=3.6
+- pandas
+- jupyter
