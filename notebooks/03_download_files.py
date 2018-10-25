@@ -67,7 +67,7 @@ for i, rec in enumerate(records):
     url = rec['links']
     flight_number = url.split('/')[-1]
     
-    if not os.path.exists("flights/flight_{}.igc".format(flight_number)): 
+    if not os.path.exists("../docs/flights/flight_{}.igc".format(flight_number)): 
         print("---------------------------------------------")
         download_flight(flight_number)
         print(" #{} {} {}    {}% done....   {} seconds".format(flight_number, str(rec['index']), rec['distance'], round(i/len(records)*100), round(time.time()-tic)))
