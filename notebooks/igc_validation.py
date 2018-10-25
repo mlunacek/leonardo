@@ -113,7 +113,7 @@ def logline_H_FDTE(line, flight):
 
 def logline_I(line, flight):
   num = int(line[1:3])
-  for i in xrange(num):
+  for i in range(num):
     field = line[3+7*i:10+7*i]
     flight['optional_records'][field[4:7]] = (int(field[0:2])-1, int(field[2:4]))
 
